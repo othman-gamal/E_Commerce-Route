@@ -11,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Spinner } from "@/components/ui/spinner";
 import { registerSchema, registerSchemaType } from "@/schema/auth.schema";
-import { registerUser } from "@/survices/auth";
+import { registerUser } from "@/services/auth";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -41,7 +41,7 @@ export default function Regester() {
       <main className="container mx-auto">
         <div className="text-center">
           <h2 className="font-bold text-2xl my-5">Welcome to ShopMart 🛒</h2>
-        <p className="text-lg">Register Now!</p>
+          <p className="text-lg">Register Now!</p>
         </div>
         <div className="w-full lg:max-w-2xl mx-auto p-6 ">
           <Form {...form}>

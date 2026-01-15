@@ -26,9 +26,7 @@ export default function Navbar() {
             <Avatar className="rounded-lg bg-black text-white text-xl ">
               <AvatarFallback>S</AvatarFallback>
             </Avatar>
-            <span className="font-bold text-xl">
-              ShopMart
-            </span>
+            <span className="font-bold text-xl">ShopMart</span>
           </Link>
           <div className="nav-link flex gap-3">
             <NavigationMenu>
@@ -45,6 +43,16 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuLink asChild className="text-lg">
                   <Link href="/categories">Categories</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild className="text-lg">
+                  <Link href="/orders">Orders</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild className="text-lg">
+                  <Link href="/wishlist">Wishlist</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenu>
